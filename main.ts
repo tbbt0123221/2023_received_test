@@ -14,119 +14,63 @@ function right () {
 }
 radio.onReceivedNumber(function (receivedNumber) {
     if (receivedNumber == 1) {
-        if (速度 == 0) {
-            motobit.enable(MotorPower.On)
-            motobit.setMotorSpeed(Motor.Left, MotorDirection.Forward, 50)
-            motobit.setMotorSpeed(Motor.Right, MotorDirection.Forward, 50)
-            basic.showLeds(`
-                . . # . .
-                . # # # .
-                # . # . #
-                . . # . .
-                . . # . .
-                `)
-            motobit.enable(MotorPower.Off)
-        } else {
-            motobit.enable(MotorPower.On)
-            motobit.setMotorSpeed(Motor.Left, MotorDirection.Forward, 20)
-            motobit.setMotorSpeed(Motor.Right, MotorDirection.Forward, 20)
-            basic.showLeds(`
-                . . # . .
-                . # # # .
-                # . # . #
-                . . # . .
-                . . # . .
-                `)
-            motobit.enable(MotorPower.Off)
-        }
+        motobit.enable(MotorPower.On)
+        motobit.setMotorSpeed(Motor.Left, MotorDirection.Forward, 50)
+        motobit.setMotorSpeed(Motor.Right, MotorDirection.Forward, 50)
+        basic.showLeds(`
+            . . # . .
+            . # # # .
+            # . # . #
+            . . # . .
+            . . # . .
+            `)
+        motobit.enable(MotorPower.Off)
     } else if (receivedNumber == 2) {
-        if (速度 == 0) {
-            motobit.enable(MotorPower.On)
-            motobit.setMotorSpeed(Motor.Left, MotorDirection.Forward, 50)
-            motobit.setMotorSpeed(Motor.Right, MotorDirection.Forward, 10)
-            basic.showLeds(`
-                . # # # #
-                . . . # #
-                . . # . #
-                . # . . #
-                . # . . .
-                `)
-            motobit.enable(MotorPower.Off)
-        } else {
-            motobit.enable(MotorPower.On)
-            motobit.setMotorSpeed(Motor.Left, MotorDirection.Forward, 30)
-            motobit.setMotorSpeed(Motor.Right, MotorDirection.Forward, 5)
-            basic.showLeds(`
-                . # # # #
-                . . . # #
-                . . # . #
-                . # . . #
-                . # . . .
-                `)
-            motobit.enable(MotorPower.Off)
-        }
+        motobit.enable(MotorPower.On)
+        motobit.setMotorSpeed(Motor.Left, MotorDirection.Forward, 50)
+        motobit.setMotorSpeed(Motor.Right, MotorDirection.Forward, 10)
+        basic.showLeds(`
+            . # # # #
+            . . . # #
+            . . # . #
+            . # . . #
+            . # . . .
+            `)
+        motobit.enable(MotorPower.Off)
     } else if (receivedNumber == 3) {
-        if (速度 == 0) {
-            motobit.enable(MotorPower.On)
-            motobit.setMotorSpeed(Motor.Left, MotorDirection.Reverse, 50)
-            motobit.setMotorSpeed(Motor.Right, MotorDirection.Reverse, 50)
-            basic.showLeds(`
-                . . # . .
-                . . # . .
-                # . # . #
-                . # # # .
-                . . # . .
-                `)
-            motobit.enable(MotorPower.Off)
-        } else {
-            motobit.enable(MotorPower.On)
-            motobit.setMotorSpeed(Motor.Left, MotorDirection.Reverse, 10)
-            motobit.setMotorSpeed(Motor.Right, MotorDirection.Reverse, 10)
-            basic.showLeds(`
-                . . # . .
-                . . # . .
-                # . # . #
-                . # # # .
-                . . # . .
-                `)
-            motobit.enable(MotorPower.Off)
-        }
+        motobit.enable(MotorPower.On)
+        motobit.setMotorSpeed(Motor.Left, MotorDirection.Reverse, 50)
+        motobit.setMotorSpeed(Motor.Right, MotorDirection.Reverse, 50)
+        basic.showLeds(`
+            . . # . .
+            . . # . .
+            # . # . #
+            . # # # .
+            . . # . .
+            `)
+        motobit.enable(MotorPower.Off)
     } else if (receivedNumber == 4) {
-        if (速度 == 0) {
-            motobit.enable(MotorPower.On)
-            motobit.setMotorSpeed(Motor.Right, MotorDirection.Forward, 50)
-            motobit.setMotorSpeed(Motor.Left, MotorDirection.Forward, 10)
-            basic.showLeds(`
-                # # # # .
-                # # . . .
-                # . # . .
-                # . . # .
-                . . . # .
-                `)
-            motobit.enable(MotorPower.Off)
-        } else {
-            motobit.enable(MotorPower.On)
-            motobit.setMotorSpeed(Motor.Right, MotorDirection.Forward, 30)
-            motobit.setMotorSpeed(Motor.Left, MotorDirection.Forward, 5)
-            basic.showLeds(`
-                # # # # .
-                # # . . .
-                # . # . .
-                # . . # .
-                . . . # .
-                `)
-            motobit.enable(MotorPower.Off)
-        }
+        motobit.enable(MotorPower.On)
+        motobit.setMotorSpeed(Motor.Right, MotorDirection.Forward, 50)
+        motobit.setMotorSpeed(Motor.Left, MotorDirection.Forward, 10)
+        basic.showLeds(`
+            # # # # .
+            # # . . .
+            # . # . .
+            # . . # .
+            . . . # .
+            `)
+        motobit.enable(MotorPower.Off)
     } else if (receivedNumber == 5) {
         basic.showLeds(`
+            # # . . .
+            # # . . .
             . . . . .
-            . . . # .
-            # # # # #
-            . # # # .
-            . # . # .
+            . . . . .
+            . . . . .
             `)
         basic.pause(500)
-    } else if (receivedNumber == 9) {
+    } else if (receivedNumber == 6) {
         basic.showLeds(`
             # # # # #
             # # . # #
@@ -135,7 +79,7 @@ radio.onReceivedNumber(function (receivedNumber) {
             # # # # #
             `)
         _9()
-    } else if (receivedNumber == 10) {
+    } else if (receivedNumber == 7) {
         basic.showLeds(`
             . . . . .
             . . # . .
@@ -144,12 +88,12 @@ radio.onReceivedNumber(function (receivedNumber) {
             . . . . .
             `)
         _10()
-    } else if (receivedNumber == 6) {
-        if (速度 == 0) {
-            速度 = 1
-        } else {
-            速度 = 0
-        }
+    } else if (receivedNumber == 8) {
+    	
+    } else if (receivedNumber == 9) {
+    	
+    } else if (receivedNumber == 10) {
+    	
     }
     basic.clearScreen()
 })
@@ -300,7 +244,6 @@ function right2 () {
     motobit.enable(MotorPower.Off)
 }
 let 速度 = 0
-速度 = 0
 pins.servoWritePin(AnalogPin.P16, 90)
 pins.servoWritePin(AnalogPin.P15, 90)
 radio.setGroup(11)
