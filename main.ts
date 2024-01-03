@@ -1,4 +1,5 @@
 radio.onReceivedNumber(function (receivedNumber) {
+    basic.clearScreen()
     if (速度 == 25) {
         if (receivedNumber == 1) {
             motobit.enable(MotorPower.On)
@@ -246,7 +247,6 @@ radio.onReceivedNumber(function (receivedNumber) {
             pins.servoWritePin(AnalogPin.P16, 90)
             pins.servoWritePin(AnalogPin.P15, 90)
         }
-        basic.clearScreen()
     }
     basic.pause(10)
 })
