@@ -56,7 +56,7 @@ radio.onReceivedNumber(function (receivedNumber) {
             . . . . .
             `)
         pins.servoWritePin(AnalogPin.P15, 180)
-        basic.pause(1000)
+        basic.pause(500)
         pins.servoWritePin(AnalogPin.P15, 90)
     } else if (receivedNumber == 6) {
         basic.showLeds(`
@@ -67,7 +67,7 @@ radio.onReceivedNumber(function (receivedNumber) {
             . . . . .
             `)
         pins.servoWritePin(AnalogPin.P16, 180)
-        basic.pause(1000)
+        basic.pause(500)
         pins.servoWritePin(AnalogPin.P16, 90)
     } else if (receivedNumber == 7) {
         basic.showLeds(`
@@ -89,7 +89,7 @@ radio.onReceivedNumber(function (receivedNumber) {
             # # . . .
             `)
         pins.servoWritePin(AnalogPin.P15, 0)
-        basic.pause(1000)
+        basic.pause(500)
         pins.servoWritePin(AnalogPin.P15, 90)
     } else if (receivedNumber == 9) {
         basic.showLeds(`
@@ -101,7 +101,7 @@ radio.onReceivedNumber(function (receivedNumber) {
             `)
         pins.servoWritePin(AnalogPin.P15, 180)
         pins.servoWritePin(AnalogPin.P16, 180)
-        basic.pause(3500)
+        basic.pause(2000)
         pins.servoWritePin(AnalogPin.P16, 90)
         pins.servoWritePin(AnalogPin.P15, 90)
     } else if (receivedNumber == 10) {
@@ -114,7 +114,7 @@ radio.onReceivedNumber(function (receivedNumber) {
             `)
         pins.servoWritePin(AnalogPin.P15, 0)
         pins.servoWritePin(AnalogPin.P16, 0)
-        basic.pause(3500)
+        basic.pause(2000)
         pins.servoWritePin(AnalogPin.P16, 90)
         pins.servoWritePin(AnalogPin.P15, 90)
     }
