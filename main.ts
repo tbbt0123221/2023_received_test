@@ -123,8 +123,8 @@ radio.onReceivedNumber(function (receivedNumber) {
     } else if (速度 == 0) {
         if (receivedNumber == 1) {
             motobit.enable(MotorPower.On)
-            motobit.setMotorSpeed(Motor.Left, MotorDirection.Forward, 10)
-            motobit.setMotorSpeed(Motor.Right, MotorDirection.Forward, 10)
+            motobit.setMotorSpeed(Motor.Left, MotorDirection.Forward, 25)
+            motobit.setMotorSpeed(Motor.Right, MotorDirection.Forward, 25)
             basic.showLeds(`
                 . . # . .
                 . # # # .
@@ -135,7 +135,7 @@ radio.onReceivedNumber(function (receivedNumber) {
             motobit.enable(MotorPower.Off)
         } else if (receivedNumber == 2) {
             motobit.enable(MotorPower.On)
-            motobit.setMotorSpeed(Motor.Left, MotorDirection.Forward, 10)
+            motobit.setMotorSpeed(Motor.Left, MotorDirection.Forward, 25)
             motobit.setMotorSpeed(Motor.Right, MotorDirection.Forward, 0)
             basic.showLeds(`
                 . # # # #
@@ -147,8 +147,8 @@ radio.onReceivedNumber(function (receivedNumber) {
             motobit.enable(MotorPower.Off)
         } else if (receivedNumber == 3) {
             motobit.enable(MotorPower.On)
-            motobit.setMotorSpeed(Motor.Left, MotorDirection.Reverse, 10)
-            motobit.setMotorSpeed(Motor.Right, MotorDirection.Reverse, 10)
+            motobit.setMotorSpeed(Motor.Left, MotorDirection.Reverse, 25)
+            motobit.setMotorSpeed(Motor.Right, MotorDirection.Reverse, 25)
             basic.showLeds(`
                 . . # . .
                 . . # . .
@@ -159,7 +159,7 @@ radio.onReceivedNumber(function (receivedNumber) {
             motobit.enable(MotorPower.Off)
         } else if (receivedNumber == 4) {
             motobit.enable(MotorPower.On)
-            motobit.setMotorSpeed(Motor.Right, MotorDirection.Forward, 10)
+            motobit.setMotorSpeed(Motor.Right, MotorDirection.Forward, 25)
             motobit.setMotorSpeed(Motor.Left, MotorDirection.Forward, 0)
             basic.showLeds(`
                 # # # # .
