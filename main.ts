@@ -248,6 +248,7 @@ radio.onReceivedNumber(function (receivedNumber) {
         }
         basic.clearScreen()
     }
+    basic.pause(10)
 })
 input.onButtonPressed(Button.A, function () {
     pins.servoWritePin(AnalogPin.P16, 100)
