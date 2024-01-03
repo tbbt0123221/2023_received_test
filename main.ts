@@ -273,6 +273,7 @@ function right2 () {
 let 速度 = 0
 pins.servoWritePin(AnalogPin.P16, 90)
 pins.servoWritePin(AnalogPin.P15, 90)
+速度 = 0
 radio.setGroup(11)
 motobit.invert(Motor.Left, true)
 motobit.invert(Motor.Right, false)
